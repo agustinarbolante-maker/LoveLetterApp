@@ -1,0 +1,140 @@
+.gift-page {
+  min-height: 100vh;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Courier New', monospace;
+  position: relative;
+  overflow: hidden;
+}
+
+.gift-container {
+  text-align: center;
+  z-index: 10;
+}
+
+.gift-button {
+  background: #ba55d3;
+  color: #000000;
+  border: 2px solid #ba55d3;
+  padding: 30px 50px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.gift-button:hover:not(:disabled) {
+  background: #0a0a0a;
+  color: #ba55d3;
+  box-shadow: 0 0 30px rgba(186, 85, 211, 0.6);
+}
+
+.gift-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.gift-icon {
+  font-size: 60px;
+}
+
+.gift-text {
+  letter-spacing: 2px;
+}
+
+.gift-caption {
+  color: #ba55d3;
+  font-size: 18px;
+  max-width: 400px;
+  line-height: 1.6;
+  text-shadow: 0 0 10px rgba(186, 85, 211, 0.3);
+}
+
+.flowers-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.floating-flower {
+  position: fixed;
+  will-change: transform;
+  filter: drop-shadow(0 0 5px rgba(186, 85, 211, 0.3));
+}
+
+.music-popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.music-popup {
+  background: #0a0a0a;
+  border: 2px solid #ba55d3;
+  padding: 40px;
+  border-radius: 0;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 0 40px rgba(186, 85, 211, 0.4);
+}
+
+.music-popup h2 {
+  color: #ba55d3;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(186, 85, 211, 0.5);
+}
+
+.music-popup p {
+  color: #ba55d3;
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.music-hint {
+  color: #9d5dcd;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.ok-btn {
+  background: #ba55d3;
+  color: #000000;
+  border: 2px solid #ba55d3;
+  padding: 12px 30px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  font-family: 'Courier New', monospace;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+.ok-btn:hover {
+  background: #0a0a0a;
+  color: #ba55d3;
+  box-shadow: 0 0 20px rgba(186, 85, 211, 0.5);
+}

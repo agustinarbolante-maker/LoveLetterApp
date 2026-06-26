@@ -1,0 +1,29 @@
+.why-section h2 {
+  color: #ba55d3;
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-shadow: 0 0 10px rgba(186, 85, 211, 0.5);
+  font-family: 'Courier New', monospace;
+}
+
+.why-content {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 0;
+  line-height: 1.8;
+  border: 1px solid #ba55d3;
+}
+
+.why-content p {
+  color: #ba55d3;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: justify;
+  letter-spacing: 0.5px;
+  font-family: 'Courier New', monospace;
+  text-shadow: 0 0 5px rgba(186, 85, 211, 0.2);
+}
+
+.why-content p:last-child {
+  margin-bottom: 0;
+}

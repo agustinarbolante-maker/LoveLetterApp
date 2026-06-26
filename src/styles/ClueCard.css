@@ -1,0 +1,148 @@
+.clue-card {
+  background: rgba(50, 50, 50, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(102, 126, 234, 0.2);
+  position: relative;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clue-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #667eea;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.locked-content {
+  text-align: center;
+  width: 100%;
+}
+
+.lock-icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.locked-content p {
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.unlock-btn {
+  padding: 10px 20px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.unlock-btn:hover {
+  background: #764ba2;
+  transform: translateY(-2px);
+}
+
+.unlock-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.unlock-form input {
+  padding: 8px;
+  border: 2px solid rgba(102, 126, 234, 0.3);
+  border-radius: 8px;
+  font-size: 14px;
+  background: rgba(30, 30, 30, 0.8);
+  color: #fff;
+}
+
+.unlock-form input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.unlock-form input:focus {
+  outline: none;
+  border-color: #667eea;
+  background: rgba(30, 30, 30, 0.95);
+}
+
+.unlock-form button {
+  padding: 8px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.unlock-form button:hover {
+  background: #764ba2;
+}
+
+.hint {
+  font-size: 12px;
+  color: #667eea;
+  margin-top: 8px;
+}
+
+.unlock-form .error {
+  color: #e74c3c;
+  font-size: 12px;
+  padding: 8px;
+  background: #fadbd8;
+  border-radius: 5px;
+}
+
+.unlocked-content {
+  width: 100%;
+  height: 100%;
+}
+
+.unlocked-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  max-height: 400px;
+}
+
+.letter-content {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.letter-content p {
+  margin: 0;
+  text-align: justify;
+}
+
+.scrambled-password {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 10px;
+  color: #ccc;
+  font-family: monospace;
+}

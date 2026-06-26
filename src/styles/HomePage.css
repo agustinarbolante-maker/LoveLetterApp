@@ -1,0 +1,120 @@
+.home-page {
+  min-height: 100vh;
+  background: #000000;
+  padding: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.home-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.home-header {
+  background: #0a0a0a;
+  border-radius: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(186, 85, 211, 0.2);
+  border: 2px solid #ba55d3;
+}
+
+.home-header h1 {
+  color: #ba55d3;
+  font-size: 28px;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(186, 85, 211, 0.5);
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #c0392b;
+  transform: translateY(-2px);
+}
+
+.home-nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  padding: 12px 25px;
+  background: #0a0a0a;
+  color: #ba55d3;
+  border: 2px solid #ba55d3;
+  border-radius: 0;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  font-family: 'Courier New', monospace;
+}
+
+.nav-btn.active {
+  background: #ba55d3;
+  color: #ffffff;
+  border-color: #ba55d3;
+  box-shadow: 0 0 15px rgba(186, 85, 211, 0.6);
+}
+
+.nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.home-content {
+  background: #0a0a0a;
+  border-radius: 0;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(186, 85, 211, 0.2);
+  border: 2px solid #ba55d3;
+  min-height: 400px;
+  color: #ba55d3;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #667eea;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .home-header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .home-header h1 {
+    font-size: 24px;
+  }
+
+  .home-nav {
+    flex-direction: column;
+  }
+
+  .nav-btn {
+    width: 100%;
+  }
+
+  .home-content {
+    padding: 20px;
+  }
+}
